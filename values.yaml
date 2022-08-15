@@ -1,0 +1,12 @@
+#the Akita project you can get it from Akita Console
+project: ""
+## The Akita docker image tag
+tag: 0.21.5
+##kubenerertes image pull policy
+pullPolicy: Always
+#must be base64 you can get it from akita console
+apiKeyId: ""
+#must be base64 you can get it from akita console
+apiKeySecret: ""
+#port you want to listen to ##
+port: 37001

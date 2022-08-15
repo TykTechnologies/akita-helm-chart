@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: akita-capture-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      name: akita-capture-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        name: akita-capture-{{ .Release.Name }}
+    spec:
+      containers:
+        - image: "akitasoftware/cli:{{.Values.tag}}"
+          imagePullPolicy: {{ .Values.pullPolicy }}
+          name: akita-{{ .Chart.Name }}
+          args:
+            - apidump
+            - --service
+            - {{required "A project name from the Akita console is required" .Values.project}}
+            - --rate-limit
+            - "200"
+            - --filter
+            - port {{.Values.port}}
+          env:
+            - name: AKITA_API_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: akita-secrets
+                  key: api-key-id
+            - name: AKITA_API_KEY_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: akita-secrets
+                  key: api-key-secret
+      dnsPolicy: ClusterFirst
+      hostNetwork: true
+      restartPolicy: Always
+
