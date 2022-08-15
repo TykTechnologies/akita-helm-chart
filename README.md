@@ -26,4 +26,4 @@ To install the akita-helm-charts chart  to you cluster run:
 To uninstall the chart:
 `helm delete my-<chart-name>`
 
-Required Parameters
+# Values You have to change in the Values.yaml
