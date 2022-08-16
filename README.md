@@ -31,7 +31,7 @@ For this chart to work the following values are required:
 **Optional Values**
 1. port -This is the port whose traffic you want to monitor.For example if your app listens on port 9007 you will pass 9007 as the port. 
 
-To install the akita-helm-chart chart to you cluster run:
+To install the akita-helm-chart chart into your cluster run:
 `helm install <release name> <alias>/akita-helm-chart --set apiKeyId=<base 64 enconded apiKeyId> --set apiKeySecret=<base 64 enconded apiKeySecret> --set project=<the-akita-project>`
 
 After the installation akita will start creating the OAS for you!!
