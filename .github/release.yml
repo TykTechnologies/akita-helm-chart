@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - relocate_charts
 
 jobs:
   release:
