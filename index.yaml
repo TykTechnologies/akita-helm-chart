@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  akita-helm-chart:
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2022-08-16T06:07:21.73329059Z"
+    description: A Helm chart for Kubernetes
+    digest: 7b1fd9c200d1e80dbad8faee6c8d28da54596c201ee0c8825cd35eb3e36e3199
+    name: akita-helm-chart
+    type: application
+    urls:
+    - https://github.com/TykTechnologies/akita-helm-chart/releases/download/akita-helm-chart-0.0.2/akita-helm-chart-0.0.2.tgz
+    version: 0.0.2
+generated: "2022-08-16T06:07:21.460364982Z"
