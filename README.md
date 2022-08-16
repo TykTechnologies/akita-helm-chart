@@ -1,6 +1,6 @@
 # What is Akita 
 
-Akita is a tool that generate Open Api Specification (OAS) by observing your traffic.
+[Akita](https://www.akitasoftware.com/) is a tool that generate Open Api Specification (OAS) by observing your traffic.
 
 ### Akita Helm Chart
 
@@ -8,7 +8,7 @@ This repo is an Akita helm chart that you can install in your kubernetes cluster
 
 ### How To use this helm chart
 
- To use this chart [Helm](https://helm.sh) Must be installed.Please refer to
+ [Helm](https://helm.sh) Must be installed to use this chart.Please refer to
  Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
@@ -22,7 +22,7 @@ If you had already added this repo earlier, run `helm repo update` to retrieve
  the latest versions of the packages.  You can then run `helm search repo
  <alias>` to see the charts.
 
-### How To Install the chart into your cluster.
+#### How To Install the chart into your cluster.
 For this chart to work the following values are required:
 1. project - This is the akita project you want to send the data into.You can create the project name from the [akita console](https://app.akita.software/). 
 2. apiKeyId - It has to be base64 encoded.You can get it from the [akita console](https://app.akita.software/).
@@ -36,6 +36,6 @@ To install the akita-helm-chart chart into your cluster run:
 
 After the installation akita will start creating the OAS for you!!
 
-### To uninstall the chart from your cluster:
+#### To uninstall the chart from your cluster:
 `helm delete <release name>`
 
