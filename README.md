@@ -28,7 +28,7 @@ For this chart to work the following values are required:
 2. apiKeyId - It has to be base64 encoded.You can get it from the [akita console](https://app.akita.software/).
 3. apiKeySecret - It has to be base64 encoded.You can get it from the [akita console](https://app.akita.software/).
 
-**Optional Parameters**
+**Optional Values**
 1. port -This is the port whose traffic you want to monitor.For example if your app listens on port 9007 you will pass 9007 as the port. 
 
 To install the akita-helm-chart chart to you cluster run:
