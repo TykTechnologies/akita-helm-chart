@@ -9,4 +9,4 @@ apiKeyId: ""
 #must be base64 you can get it from akita console
 apiKeySecret: ""
 #port you want to listen to ##
-port: 37001
+port: 9007
