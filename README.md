@@ -20,7 +20,6 @@ If you had already added this repo earlier, run `helm repo update` to retrieve
  <alias>` to see the charts.
 
 To install the akita-helm-charts chart  to you cluster run:
-
 `helm install my-<chart-name> <alias>/<chart-name>`
 
 To uninstall the chart:
