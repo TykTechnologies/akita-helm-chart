@@ -23,7 +23,6 @@ jobs:
           branch: 'main'
           ##people who don't have to sign the CLA comma separated e.g user1,user2
           allowlist: bot*
-
           #below are the optional inputs - If the optional inputs are not given, then default values will be taken
           #remote-organization-name: 'TykTechnologies'
           #remote-repository-name:  cla
