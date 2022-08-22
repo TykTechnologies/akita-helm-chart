@@ -4,11 +4,11 @@
 
 ### Akita Helm Chart
 
-This repo is an Akita helm chart that you can install in your kubernetes cluster and akita will start producing OAS for your.
+This repo is an Akita helm chart that you can install in your kubernetes cluster and akita start producing OAS for your.
 
 ### How To use this helm chart
 
- [Helm](https://helm.sh) Must be installed to use this chart.Please refer to
+ [Helm](https://helm.sh) must be installed to use this chart.Please refer to
  Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
@@ -19,12 +19,12 @@ For example if you choose `akita-online` as your alias you would write something
 `helm repo add akita-online https://tyktechnologies.github.io/akita-helm-chart`
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
- the latest versions of the packages.  You can then run `helm search repo
+ the latest versions of the packages.You can then run `helm search repo
  <alias>` to see the charts.
 
 #### How To Install the chart into your cluster.
 For this chart to work the following values are required:
-1. **project** - This is the akita project you want to send the data into.You can create the project name from the [akita console](https://app.akita.software/). 
+1. **project** - This is the akita project you want to send the data to.You can create the project name from the [akita console](https://app.akita.software/). 
 2. **apiKeyId** - It has to be base64 encoded.You can get it from the [akita console](https://app.akita.software/).
 3. **apiKeySecret**- It has to be base64 encoded.You can get it from the [akita console](https://app.akita.software/).
 
