@@ -12,10 +12,10 @@ PLEASE CHANGE THIS FILE NAME TO BE "README.md" so GitHub can automatically surfa
 -->
 
 ## About
-This repo is doing ...
+This repo is doing ..
   
 ## Purpose
-You can use it for ....
+You can use it for ...
   
 ## Getting started  
 To get started do ... <!-- add code snippet etc -->
